@@ -38,7 +38,11 @@ formatting: polish-codestyle
 #* Linting
 .PHONY: test
 test:
-	if [ ! -d "tests/" ]; then\n		echo "Error: 'tests/' directory not found!"\n		exit 1\n	fi\n	$(TEST_COMMAND)
+	if [ ! -d "tests/" ]; then \
+		echo "Error: 'tests/' directory not found!"; \
+		exit 1; \
+	fi; \
+	$(TEST_COMMAND)
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
