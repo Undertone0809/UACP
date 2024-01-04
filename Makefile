@@ -41,8 +41,13 @@ test:
 	PYTHONPATH=`pwd` poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
+.PHONY: format-code
+format-code:
+	poetry run ruff format --config pyproject.toml .
+
 .PHONY: check-codestyle
-check-codestyle:
+check-codestyle: format-code
+	poetry run ruff format --check --config pyproject.toml .
 	poetry run ruff format --check --config pyproject.toml .
 	poetry run ruff check --config pyproject.toml .
 
