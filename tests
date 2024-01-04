@@ -1,0 +1,8 @@
+import pytest
+from uacp import get_version, version
+
+def test_get_version():
+    assert isinstance(get_version(), str), "get_version should return a string"
+
+def test_version():
+    assert isinstance(version, str), "version should be a string"
