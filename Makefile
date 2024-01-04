@@ -5,9 +5,9 @@ OS := $(shell python -c "import sys; print(sys.platform)")
 
 ifeq ($(OS),win32)
 	PYTHONPATH := $(shell python -c "import os; print(os.getcwd())")
-    TEST_COMMAND := set PYTHONPATH=$(PYTHONPATH) && poetry run pytest -c pyproject.toml --cov-report=uacp --cov=hooks tests/
+    TEST_COMMAND := set PYTHONPATH=$(PYTHONPATH) && poetry run pytest -c pyproject.toml --cov-report=html --cov=hooks tests/
 else
-	PYTHONPATH := `pwd`
+	PYTHONPATH := $(CURDIR)
     TEST_COMMAND := PYTHONPATH=$(PYTHONPATH) poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
 endif
 
