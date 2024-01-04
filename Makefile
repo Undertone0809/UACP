@@ -39,6 +39,7 @@ formatting: polish-codestyle
 .PHONY: test
 test:
 	$(TEST_COMMAND) tests/
+		mkdir -p assets/images
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
