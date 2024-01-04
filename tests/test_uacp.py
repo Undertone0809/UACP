@@ -1,4 +1,7 @@
 import pytest
+from uacp import UacpClass
+from uacp import UacpClass
+from uacp import UacpClass
 from uacp import UacpClass  # Assuming UacpClass is a class in the uacp package
 
 
