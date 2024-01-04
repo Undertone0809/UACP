@@ -40,6 +40,7 @@ Command `make lint` applies all checks.
 Before submitting your code please do the following steps:
 
 1. Add any changes you want
+1. Create a `tests/` directory in the root of the repository to hold your test files. Run `make test` to execute the tests.
 1. Add tests for the new changes
 1. Edit documentation if you have changed something significant
 1. Run `make formatting` to format your changes.
