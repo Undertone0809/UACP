@@ -1,0 +1,69 @@
+import unittest
+from uacp import core
+
+class TestCore(unittest.TestCase):
+    def test_function1(self):
+        # Test case for function1
+        result = core.function1()
+        self.assertEqual(result, expected_result)
+
+    def test_function2(self):
+        # Test case for function2
+        result = core.function2()
+        self.assertEqual(result, expected_result)
+
+    def test_class1(self):
+        # Test case for class1
+        obj = core.Class1()
+        result = obj.method1()
+        self.assertEqual(result, expected_result)
+```
+</new_file>
+
+<new_file file_path="tests/test_protocol.py">
+```python
+import unittest
+from uacp import protocol
+
+class TestProtocol(unittest.TestCase):
+    def test_function1(self):
+        # Test case for function1
+        result = protocol.function1()
+        self.assertEqual(result, expected_result)
+
+    def test_function2(self):
+        # Test case for function2
+        result = protocol.function2()
+        self.assertEqual(result, expected_result)
+
+    def test_class1(self):
+        # Test case for class1
+        obj = protocol.Class1()
+        result = obj.method1()
+        self.assertEqual(result, expected_result)
+```
+</new_file>
+
+<new_file file_path="tests/test_singleton.py">
+```python
+import unittest
+from uacp.utils import singleton
+
+class TestSingleton(unittest.TestCase):
+    def test_singleton(self):
+        # Test case for singleton
+        obj1 = singleton.Singleton()
+        obj2 = singleton.Singleton()
+        self.assertEqual(obj1, obj2)
+
+    def test_abstract_singleton(self):
+        # Test case for abstract singleton
+        obj1 = singleton.AbstractSingleton()
+        obj2 = singleton.AbstractSingleton()
+        self.assertEqual(obj1, obj2)
+
+    def test_singleton_pool(self):
+        # Test case for singleton pool
+        obj1 = singleton.SingletonPool()
+        obj2 = singleton.SingletonPool()
+        self.assertEqual(obj1, obj2)
