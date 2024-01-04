@@ -38,7 +38,7 @@ formatting: polish-codestyle
 #* Linting
 .PHONY: test
 test:
-	$(TEST_COMMAND)
+	PYTHONPATH=`pwd` poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
@@ -64,6 +64,8 @@ docker-build:
 
 # Example: make docker-remove VERSION=latest
 # Example: make docker-remove IMAGE=some_name VERSION=0.1.0
+
+.PHONY: test
 .PHONY: docker-remove
 docker-remove:
 	@echo Removing docker $(IMAGE):$(VERSION) ...

@@ -113,7 +113,7 @@ addopts = [
 ]
 
 [tool.coverage.run]
-source = ["tests"]
+  source = ["tests/"]
 
 [coverage.paths]
 source = "uacp"
