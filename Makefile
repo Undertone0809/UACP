@@ -29,7 +29,7 @@ pre-commit-install:
 #* Formatters
 .PHONY: polish-codestyle
 polish-codestyle:
-	poetry run ruff format --config pyproject.toml .
+	poetry run ruff format --check --fix --config pyproject.toml .
 	poetry run ruff check --fix --config pyproject.toml .
 
 .PHONY: formatting
