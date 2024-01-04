@@ -38,7 +38,7 @@ formatting: polish-codestyle
 #* Linting
 .PHONY: test
 test:
-	$(TEST_COMMAND)
+	$(TEST_COMMAND) tests/
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
