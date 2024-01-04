@@ -1,4 +1,6 @@
+from uacp import Uacp
 import pytest
+from uacp import Uacp
 from uacp import Uacp
 
 
