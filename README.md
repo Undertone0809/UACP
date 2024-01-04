@@ -135,6 +135,7 @@ make check-safety
 <p>
 
 Run `pytest`
+Ensure that your test files are located in a `tests/` directory in the root of the repository. Run `make test` to execute the tests.
 
 ```bash
 make test
