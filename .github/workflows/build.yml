@@ -33,6 +33,12 @@ jobs:
       run: |
         make check-codestyle
 
-    - name: Run tests
+    - name: Create tests directory
+      run: |
+        mkdir tests
+- name: Create tests directory
+      run: |
+        mkdir tests
+- name: Run tests
       run: |
         make test

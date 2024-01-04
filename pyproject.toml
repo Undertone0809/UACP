@@ -4,6 +4,12 @@ requires = ["poetry_core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
+
+[tool.coverage.run]
+source = "tests"
+
+[tool.coverage.run]
+source = "tests"
 name = "uacp"
 version = "0.1.0"
 description = "Universal Agent Communication Protocol"
@@ -122,5 +128,5 @@ source = "uacp"
 branch = true
 
 [coverage.report]
-fail_under = 50
+fail_under = 80
 show_missing = true
