@@ -1,5 +1,6 @@
-import pytest
+# Run make check-codestyle command to check the codestyle
 from uacp import main
+import pytest
 
 
 def test_add_numbers():
