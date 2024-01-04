@@ -39,7 +39,8 @@ formatting: polish-codestyle
 .PHONY: test
 test:
 	PYTHONPATH=`pwd` poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
-	poetry run coverage-badge -o assets/images/coverage.svg -f
+	mkdir -p assets/images
+poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
 check-codestyle:
