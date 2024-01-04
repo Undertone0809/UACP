@@ -38,7 +38,7 @@ formatting: polish-codestyle
 #* Linting
 .PHONY: test
 test:
-	$(TEST_COMMAND)
+	PYTHONPATH=`pwd` poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
 	poetry run coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
