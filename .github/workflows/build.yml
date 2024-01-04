@@ -30,9 +30,11 @@ jobs:
         poetry install
 
     - name: Run style checks
-      run: |
+      run: PYTEST_ADDOPTS=
+   | PYTEST_ADDOPTS=
+      
         make check-codestyle
 
     - name: Run tests
       run: |
-        make test
+        poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
