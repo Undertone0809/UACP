@@ -2,4 +2,4 @@ import pytest
 
 
 def test_sample():
-    assert True == True
+    assert True
