@@ -1,4 +1,4 @@
-import pytest
+poetry run ruff format --check tests/test_uacp.py
 from uacp import module1, module2  # Replace with actual modules
 
 
