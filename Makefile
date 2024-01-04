@@ -43,7 +43,7 @@ test:
 
 .PHONY: check-codestyle
 check-codestyle:
-	poetry run ruff format --check --config pyproject.toml .
+	poetry run ruff format --fix --config pyproject.toml .
 	poetry run ruff check --config pyproject.toml .
 
 .PHONY: lint
