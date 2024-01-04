@@ -8,7 +8,7 @@ ifeq ($(OS),win32)
     TEST_COMMAND := set PYTHONPATH=$(PYTHONPATH) && poetry run pytest -c pyproject.toml --cov-report=uacp --cov=hooks tests/
 else
 	PYTHONPATH := `pwd`
-    TEST_COMMAND := PYTHONPATH=$(PYTHONPATH) poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
+    TEST_COMMAND := PYTHONPATH=`pwd` poetry run pytest -c pyproject.toml --cov-report=html --cov=uacp tests/
 endif
 
 
