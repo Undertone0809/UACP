@@ -27,14 +27,9 @@ classifiers = [  #! Update me
   "Programming Language :: Python :: 3.9",
 ]
 
-
-
-
-
 [tool.poetry.dependencies]
 python = "^3.9"
-
-
+pydantic = "^2.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.4.3"
