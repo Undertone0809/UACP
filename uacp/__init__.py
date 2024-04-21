@@ -1,19 +1,4 @@
-# type: ignore[attr-defined]
-"""Universal Agent Communication Protocol"""
+from uacp.agent import Agent
+from uacp.schema import Artifact, Step, Task
 
-import sys
-
-if sys.version_info >= (3, 8):
-    from importlib import metadata as importlib_metadata
-else:
-    import importlib_metadata
-
-
-def get_version() -> str:
-    try:
-        return importlib_metadata.version(__name__)
-    except importlib_metadata.PackageNotFoundError:  # pragma: no cover
-        return "unknown"
-
-
-version: str = get_version()
+__all__ = ["Agent", "Step", "Task", "Artifact"]
