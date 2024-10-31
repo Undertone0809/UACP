@@ -79,7 +79,7 @@ The following example show how to use Assistant Agent to solve a simple problem.
 
 Firstly, we need to install necessary packages.
 ```bash
-pip install langchain, langchain_community, promptulate
+pip install langchain, langchain_community, promptulate=1.18.4
 ```
 
 Now we import the necessary packages:
