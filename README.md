@@ -1,3 +1,14 @@
+# Preface
+
+In the early days of artificial intelligence development, I was involved in the design and application development framework of AI Agents. Through deep involvement in multiple large language model application frameworks and research into all available SDK designs in the market, I profoundly realized a critical issue: each development framework was using its own unique approach to build AI Agents, highlighting the urgent need for a unified protocol layer. Similar to the HTTP protocol, establishing such a standard would enable better ecosystem development between different AI Agents and create more powerful AI Agent applications. Based on this insight, I initiated the UACP project.
+
+Unfortunately, due to personal circumstances, I couldn't dedicate sufficient energy to advance this project. However, I always believed that such a standard would eventually emerge. Recently, when I saw Brown Smith's Agent Protocol proposal, I realized that the field was finally moving forward. In retrospect, designing UACP in 2023 might not have been the optimal timing, as AI Agents were still in their early stages of development, with relatively weak reasoning capabilities, and the industry had not yet formed a dominant ecosystem.
+
+It's encouraging to see that LangChain is now effectively pushing this direction forward. After studying network dynamics concepts, I gained a clearer understanding: building the UACP protocol itself wasn't the biggest challenge; the key lay in how to drive industry-wide adoption of such a standard. While I might not have had the influence necessary at the time, and though I missed this opportunity, this experience serves as a valuable historical record.
+
+Zeeland 2024.12.22
+
+
 <h1 align="center">
     UACP
 </h1>
